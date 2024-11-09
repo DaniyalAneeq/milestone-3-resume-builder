@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    background-color: #e5e5e5;
+}
+
+.resume-div {
+    width: 60%; 
+    border: 2px solid black;
+    display: flex;
+
+}
+
+.left-side {
+    width: 35%;
+}
+
+.rigth-side {
+    width: 65%;
+}
+
+header {
+    /* width: 35%; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #264469;
+}
+
+
+header img {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #196cd1;
+}
+
+
+.heading{
+    color: #e5e5e5;
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+   
+}
+
+.content aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #1b2b41;
+    padding-bottom: 30px;
+    color: rgba(255, 255, 255, 0.822);
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.contact, .language, .skill {
+    margin-bottom: 30px;
+}
+
+
+.contact i{
+    text-decoration: none;
+    padding: 15px 0px;
+    padding-right: 10px;
+}
+
+.contact h3,
+.language h3,
+.skill h3 {
+    border-bottom: 2px solid #e5e5e577;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+
+.skill ul {
+    margin-left: 18px;
+}
+.skill ul li {
+    padding-top: 10px;
+}
+
+
+.main-content {
+    /* width: 60%; */
+    /* background-color: white; */
+    padding: 30px;
+}
+
+.education, .experience, .about, .links {
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+
+.education h2, .experience h2, .about h2, .reference h2, .links h2 {
+    border-bottom: 2px solid #264469;
+    margin-bottom: 20px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight:550 ;
+    color: #264469;
+}
+
+
+.experience-items p {
+    margin-bottom: 5px; 
+}
+
+.experience-items ul {
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.links h2 {
+    padding-top: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: gray;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.links button {
+    height: 50px;
+    width: 50px;
+    border: 1px ;
+    color: white;
+    border-radius: 50%;
+    background-color: #264469;
+    font-size: 26px;
+}
+
+
+
+.btnDiv {
+    width: 60%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-radius: 6px;
+    background-color: #264469;
+    margin-left: 10px;
+
+    &:hover {
+        background:  #37495f;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@media print {
+    .btnDiv{
+        display: none;
+    }
+}
+
+@media (max-width: 700px){
+    .btnDiv{
+        flex-direction: column;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+    .rigth-side{
+        font-size: xx-small;
+    }
+    .left-side{
+        font-size: xx-small;
+        width:42%;
+        height: 100%;
+    }
+    .rigth-side h2 {
+        font-size: small;
+        width: 58%;
+    }
+    .resume-div{
+        width: 90%;
+        height: 780px;
+    }
+    header img{
+        width: 80px;
+        height: 90px;
+    }
+    .education h2, 
+    .experience h2, 
+    .about h2, 
+    .links h2{
+        margin-bottom: 3px;
+    }
+    .education, 
+    .experience,
+    .about, .links {
+        margin-bottom: 5px;
+        line-height: 19px;
+    }
+    .links button {
+        margin-top: -40px;
+        height: 30px;
+        width: 30px;
+        background-color: #264469;
+        font-size: 16px;
+    }
+    .links {
+        margin-top: -25px;
+    }
+
+    .links h2 {
+        font-size: 10px;
+    }
+    .skill ul li {
+        padding-top: 0.2px;
+    }
+
+}
+
+

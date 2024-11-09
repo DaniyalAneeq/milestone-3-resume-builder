@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static-Resume</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="resume-div">
+      <div class="left-side">
+        <header>
+          <div>
+            <img id="resImg" src="profile-pic.png" alt="profile-pic" />
+          </div>
+          <div class="heading">
+            <h2><span id="resName"></span></h2>
+            <p><span id="resDesig"></span></p>
+          </div>
+        </header>
+
+        <div class="content">
+          <aside>
+            <section id="contact" class="contact">
+              <h3>CONTACT</h3>
+              <h4>Phone</h4>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <span><span id="resPhone"></span></span>
+              <br />
+              <h4>Email</h4>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <span><span id="resEmail"></span></span>
+              <br />
+              <h4>Address</h4>
+              <span><i class="fa-solid fa-address-book"></i></span>
+              <span><span id="resAddress"></span></span>
+            </section>
+
+            <section id="language" class="language">
+              <h3>LANGUAGE</h3>
+              <p><span id="resLang1"></span></p>
+              <p><span id="resLang2"></span></p>
+            </section>
+            <section id="skill" class="skill">
+              <h3>SKILLS</h3>
+              <ul>
+                <li><span id="resSkill1"></span></li>
+                <li><span id="resSkill2"></span></li>
+                <li><span id="resSkill3"></span></li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+
+      <div class="rigth-side">
+        <main class="main-content">
+          <section id="about" class="about">
+            <h2>ABOUT ME</h2>
+            <p><span id="resAbout"></span></p>
+          </section>
+          <section id="education" class="education">
+            <h2>EDUCATION</h2>
+            <p><span id="resPass"></span></p>
+            <p><strong><span id="resDeg"></span></strong></p>
+            <p><span id="resIns"></span></p>
+            <br />
+            <p><span id="resPass2"></span></p>
+            <p><strong><span id="resDeg2"></span></strong></p>
+            <p><span id="resIns2"></span></p>
+          </section>
+          <section id="experience" class="experience">
+            <h2>WORK EXPERIENCE</h2>
+            <div class="experience-items">
+              <p><span id="resStyear"></span> - <span id="resEndyear"></span></p>
+              <p><strong><span id="resComp"></span>| <span id="resCompLoc"></span></strong></p>
+              <p><span id="resJobTitle"></span></p>
+              <ul>
+                <li><span id="resAchive1"></span></li>
+                <li><span id="resAchive2"></span></li>
+                <li><span id="resAchive3"></span></li>
+              </ul>
+            </div>
+          </section>
+          <section id="ref" class="reference">
+            <h2>REFERENCE</h2>
+            <p>Available upon request</p>
+          </section>
+          <section class="links">
+            <h2>SOCIAL MEDIA LINKS</h2>
+            <div class="social">
+              <button><a id="resLink1" href="https://www.linkedin.com/feed/" target="_blank"><i  class="fa-brands fa-linkedin"></i></a></button>
+              <button><a id="resLink2" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></button>
+              <!-- <br> -->
+              <button><a id="resLink3" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></button>
+              <button><a id="resLink4" href="https://github.com/" target="_blank"><i class="fa-brands fa-square-github"></i></a></button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="btnDiv">
+      <button id="cont_btn" class="btn">CONTACT</button>
+      <button id="lang_btn" class="btn">LANGUAGE</button>
+      <button id="skill_btn" class="btn">SKILLS</button>
+      <button id="about_btn" class="btn">ABOUT ME</button>
+      <button id="edu_btn" class="btn">EDUCATION</button>
+      <button id="exp_btn" class="btn">WORK EXPERIENCE</button>
+      <button id="ref_btn" class="btn">REFERENCE</button>
+      <button id="print_btn" class="btn">Print</button>
+    </div>
+  </body>
+  <script src="resume.js"></script>
+</html>
